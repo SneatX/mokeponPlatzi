@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap');
+
+
+body{
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+}
+
+#bienvenida{
+    font-family: 'Bangers', cursive;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /*Alinear verticalmente*/
+    align-items: center;    /*Alinear Horizontalmente*/
+}
+
+.titulo{
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 16vh;
+    margin: 0;
+}
+
+#bienvenida h2{
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 8vh;
+    margin: 0;
+}
+
+#iniciarJuego {
+    margin-top: 8vh;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 3vh;
+    font-family: 'Press Start 2P', cursive;
+}
+  
+#iniciarJuego:hover {
+    background-color: #757575
+}
+  
+#iniciarJuego:active {
+    background-color: rgba(95,122,46,255);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/*TARJETAS PERSONAJES*/
+.tituloPersonaje{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 7vh;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0vh;
+}
+
+#elegirPersonaje{
+    font-size: 2vh;
+    display: grid;
+    height: 75vh;
+    width: auto;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+}
+
+.tarjeta{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(145, 145, 145, 0.335);
+    border: 1px solid black;
+    margin: 2vh 5vh 2vh 5vh;  /* Arriba | Derecha | Abajo | Izquierda */
+    border-radius: 4vh;
+}
+
+.tarjeta img{
+    height: 20vh;
+}
+
+.tarjeta:hover{
+    margin: 1vh 4vh 1vh 4vh;  /* Arriba | Derecha | Abajo | Izquierda */
+    background-color: #7676768c;
+}
+
+.tarjeta:active{
+    background-color: rgba(95,122,46,255);
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+    accent-color: rgba(95,122,46,255);
+    margin-top: 2vh;
+}
+
+.btnPersonaje{  /*Boton de personaje seleccionado*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btnPersonaje {         
+    margin-top: 8vh;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 3vh;
+    font-family: 'Press Start 2P', cursive;
+}
+  
+  #btnPersonaje:hover {
+    background-color: #757575
+}
+  
+  #btnPersonaje:active {
+    background-color: rgba(95,122,46,255);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/*GAMEPLAY*/
+
+.tituloCombate{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 7vh;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0vh;
+}
+
+#campeones{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+.corazon{
+    width: 10%;
+}
+
+#ataques{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vh;
+}
+
+/*BOTONES ATAQUES*/
+#btnFuego {
+    margin-top: 8vh;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #c20000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #390c0c;
+    margin-bottom: 3vh;
+    font-family: 'Press Start 2P', cursive;
+}
+#btnFuego:hover {
+    background-color: #f43900
+}
+#btnFuego:active {
+    background-color: rgb(123, 0, 0);
+    box-shadow: 0 5px #390c0c;
+    transform: translateY(4px);
+}
+
+
+#btnAgua {
+    margin-top: 8vh;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: rgb(0, 89, 255);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #123563;
+    margin-bottom: 3vh;
+    font-family: 'Press Start 2P', cursive;
+}
+#btnAgua:hover {
+    background-color: rgb(0, 162, 255)
+}
+#btnAgua:active {
+    background-color: rgb(0, 33, 163);
+    box-shadow: 0 5px rgb(0, 16, 82);
+    transform: translateY(4px);
+}
+
+
+#btnTierra {
+    margin-top: 8vh;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: rgb(4, 184, 70);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #126322;
+    margin-bottom: 3vh;
+    font-family: 'Press Start 2P', cursive;
+}
+#btnTierra:hover {
+    background-color: rgb(0, 227, 83)
+}
+#btnTierra:active {
+    background-color: rgb(0, 127, 8);
+    box-shadow: 0 5px rgb(5, 82, 0);
+    transform: translateY(4px);
+}
+
+/*FIN BOTONES ATAQUES*/
+
+#resultado{
+    font-family: 'Bangers', cursive;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 6vh;
+    margin: 0;
+    text-align: center;
+}
+
+#reiniciar{
+    display: none;
+    text-align: center;
+}
+
+#btnReiniciar {
+    margin-top: 8vh;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #272727;
+    margin-bottom: 3vh;
+    font-family: 'Press Start 2P', cursive;
+}
+#btnReiniciar:hover {
+    background-color: rgb(52, 52, 52)
+}
+#btnReiniciar:active {
+    background-color: rgb(127, 0, 0);
+    box-shadow: 0 5px rgb(48, 0, 0);
+    transform: translateY(4px);
+}

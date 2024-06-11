@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="bienvenida">
+        <h1 class="titulo">TITULO</h1>
+        <h2>Subtitulo</h2>
+        <button id="iniciarJuego">Iniciar</button>
+    </div>
+
+    <div id="seleccionPersonajes">
+        <h1 class="tituloPersonaje">Selecciona tu campeon</h1>
+
+        <div id="elegirPersonaje">
+            <label class="tarjeta" for="yasuo">
+                <p>Yasuo</p>
+                <img src="./img/yasuo-1.png">
+                <input type="radio" name="personajes" id="yasuo">
+            </label>
+    
+    
+            <label class="tarjeta" for="lissandra">
+                <p>Lissandra</p>
+                <img src="./img/lissandra-1.png">
+                <input type="radio" name="personajes" id="lissandra">
+            </label>
+    
+    
+            <label class="tarjeta" for="ahri">
+                <p>Ahri</p>
+                <img src="./img/ahri-1.png">
+                <input type="radio" name="personajes" id="ahri">
+            </label>
+    
+            <label class="tarjeta" for="jinx">
+                <p>Jinx</p>
+                <img src="./img/jinx-1.png">
+                <input type="radio" name="personajes" id="jinx">
+            </label>
+    
+            <label class="tarjeta" for="riven">
+                <p>Riven</p>
+                <img src="./img/riven-1.png">
+                <input type="radio" name="personajes" id="riven">
+            </label>
+    
+            <label class="tarjeta" for="vi">
+                <p>Vi</p>
+                <img src="./img/vi-1.png">
+                <input type="radio" name="personajes" id="vi">
+            </label>
+    
+            <label class="tarjeta" for="singed">
+                <p>Singed</p>
+                <img src="./img/singed-1.png">
+                <input type="radio" name="personajes" id="singed">
+            </label>
+    
+            <label class="tarjeta" for="tf">
+                <p>Twister Fate</p>
+                <img src="./img/tf-1.png">
+                <input type="radio" name="personajes" id="tf">
+            </label>
+        </div>
+
+        <div class="btnPersonaje">
+            <button id="btnPersonaje">Continuar</button>
+        </div>
+
+    </div>
+
+    <div id="gameplay">
+        <h1 class="tituloCombate">combate</h1>
+        <div id="campeones">
+            <h3 id="nombreCampeonAliado"></h3>
+            <h3 id="nombreCampeonEnemigo"></h3>
+            <div id="campeonAliado"></div>
+            <div id="campeonEnemigo"></div>
+            <h3 id="vidasAliado">3</h3>
+            <h3 id="vidasEnemigo">2</h3>
+
+            <h3 id="ataqueAliado"></h3>
+            <h3 id="ataqueEnemigo"></h3>
+        </div>
+
+        <div id="resultado">
+
+        </div>
+
+        <div id="ataques">
+            <button id="btnFuego">Fuego</button>
+            <button id="btnAgua">Agua</button>
+            <button id="btnTierra">Tierra</button>
+        </div>
+    </div>
+
+    <div id="reiniciar">
+        <button id="btnReiniciar">Volver a jugar</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
